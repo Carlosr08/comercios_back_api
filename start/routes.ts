@@ -1,5 +1,5 @@
 import Route from '@ioc:Adonis/Core/Route'
-import User from 'App/Models/User'
+// import User from 'App/Models/User'
 
 Route.get('/', async () => {
   return { hello: 'world' }
@@ -24,7 +24,7 @@ Route.post('/logout', async ({ auth }) => {
   }
 })
 
-Route.get('/google', async ({ ally, auth }) => {
+Route.get('/google', async ({ ally }) => {
   return ally.use('google').redirect()
   // const google = ally.use('google')
   // const googleUser = await google.user()
