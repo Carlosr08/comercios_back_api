@@ -1,6 +1,9 @@
 import Route from '@ioc:Adonis/Core/Route'
 // import User from 'App/Models/User'
 import './categories'
+import './states'
+import './municipalities'
+import './parishes'
 
 Route.get('/', async () => {
   return { hello: 'world' }
